@@ -86,7 +86,7 @@ export class AppComponent implements OnInit {
 
      iframe.contentWindow.print();
 
-
+      /*
      asyncScheduler.schedule(() => {
         iframe.contentWindow.onafterprint = () => {
           //iframe.contentDocument.body.innerHTML = "";
@@ -94,6 +94,7 @@ export class AppComponent implements OnInit {
         iframe.contentWindow.print();
 
      });
+     */
     
   }
 

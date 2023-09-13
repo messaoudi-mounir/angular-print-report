@@ -17,13 +17,10 @@ import { NGX_ECHARTS_CONFIG } from 'ngx-echarts';
 export class Report1Component implements OnInit {
 
 
-
-  
   props = new Map<string, any>();
 
+
   title: string = 'Default Title';
-
-
 
   STYLES: any = {
     MAIN_CONTAINER: 'background:red;',
@@ -32,24 +29,16 @@ export class Report1Component implements OnInit {
 
   chartOption: EChartsOption;
 
-  functiPrapre(){
-
-
-  }
-
 
   register = new Map<string, boolean>();
-
   reportIsReady: EventEmitter<boolean> = new EventEmitter<boolean>();
   _reportIsReady = false;
 
   constructor(private el: ElementRef) {}
 
-
   ngOnInit(): void {
       this.title= this.props.get("title");
       this.chartOption =  this.props.get("chartProps");
-
   }
 
 
@@ -79,12 +68,14 @@ export class Report1Component implements OnInit {
   checkReportIsReady() {
     if(!this._reportIsReady) {
         this.register.forEach((value: boolean, key: string) => {
-          if(!value) return false;
+          if(value == false) {
+            console.log('Report not yet ready for printing: ' +  key);
+            return false;
+          }
       });
 
       this._reportIsReady = true;
       this.reportIsReady.emit(true);
-  
     }
     return true;
   }
