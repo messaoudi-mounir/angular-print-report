@@ -1,0 +1,55 @@
+  /* Define the styles for the page headers and footers */
+  @page {
+    size: letter; /* Set the paper size (you can use other values like A4) */
+    margin: 20mm 10mm; /* Set page margins */
+  }
+
+  @page :first {
+    /* Styles for the first page */
+  }
+
+  @page :left {
+    /* Styles for left-hand pages (even-numbered pages) */
+  }
+
+  @page :right {
+    /* Styles for right-hand pages (odd-numbered pages) */
+  }
+
+  /* Define the content and styling of the page header */
+  @page {
+    margin-top: 40mm; /* Set the top margin for the header area */
+  }
+
+  #header {
+    position: running(header);
+  }
+
+  @page {
+    @top-center {
+      content: element(header);
+    }
+  }
+
+  /* Define the content and styling of the page footer */
+  @page {
+    margin-bottom: 40mm; /* Set the bottom margin for the footer area */
+  }
+
+  #footer {
+    position: running(footer);
+  }
+
+  @page {
+    @bottom-center {
+      content: element(footer);
+    }
+  }
+
+  /* Define the styling for the header and footer elements */
+  #header, #footer {
+    text-align: center;
+    font-size: 12px;
+    background-color: #f0f0f0;
+    padding: 5px;
+  }

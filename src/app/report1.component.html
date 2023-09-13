@@ -1,0 +1,764 @@
+
+
+  <!-- Define the header content -->
+<div id="header">
+  <p>This is the header of the printed page.</p>
+</div>
+
+<!-- Define the footer content -->
+<div id="footer">
+  <p>Page <span class="pageNumber"></span> of <span class="pageCount"></span></p>
+</div>
+
+
+
+<h2>Title: {{ title }}</h2>
+
+<table style="{{ STYLES.MAIN_CONTAINER }}">
+  <tr style="{{ STYLES.ITEM_BOX }}">
+    <th>Company</th>
+    <th>Contact</th>
+    <th>Country</th>
+  </tr>
+  <tr style="{{ STYLES.ITEM_BOX }}">
+    <td>Alfreds Futterkiste</td>
+    <td>Maria Anders</td>
+    <td>Germany</td>
+  </tr>
+  <tr style="{{ STYLES.ITEM_BOX }}">
+    <td>Centro comercial Moctezuma</td>
+    <td>Francisco Chang</td>
+    <td>Mexico</td>
+  </tr>
+  <tr style="{{ STYLES.ITEM_BOX }}">
+    <td>Ernst Handel</td>
+    <td>Roland Mendel</td>
+    <td>Austria</td>
+  </tr>
+  <tr style="{{ STYLES.ITEM_BOX }}">
+    <td>Island Trading</td>
+    <td>Helen Bennett</td>
+    <td>UK</td>
+  </tr>
+  <tr style="{{ STYLES.ITEM_BOX }}">
+    <td>Laughing Bacchus Winecellars</td>
+    <td>Yoshi Tannamuri</td>
+    <td>Canada</td>
+  </tr>
+  <tr style="{{ STYLES.ITEM_BOX }}">
+    <td>Magazzini Alimentari Riuniti</td>
+    <td>Giovanni Rovelli</td>
+    <td>Italy</td>
+  </tr>
+</table>
+
+<style>
+  .demo-chart {
+    width:600px;
+    height: 400px;
+  }
+</style>
+
+First chart 
+<div echarts [options]="chartOption" class="demo-chart" (chartInit)="onChartInit($event)"></div>
+
+
+<table>
+<thead>
+  <tr>
+    <th>Column 1</th>
+    <th>Column 2</th>
+    <!-- Add more header columns as needed -->
+  </tr>
+</thead>
+<tbody id="table-body">
+  <tr>
+    <td>Row 1, Column 1</td>
+    <td>Row 1, Column 2</td>
+  </tr>
+  <tr>
+    <td>Row 2, Column 1</td>
+    <td>Row 2, Column 2</td>
+  </tr>
+  <!-- More rows... -->
+  <tr>
+    <td>Row 9999, Column 1</td>
+    <td>Row 9999, Column 2</td>
+  </tr>
+  <tr>
+    <td>Row 10000, Column 1</td>
+    <td>Row 10000, Column 2</td>
+  </tr>
+
+  <tr>
+  <td>Row 1, Column 1</td>
+  <td>Row 1, Column 2</td>
+</tr>
+<tr>
+  <td>Row 2, Column 1</td>
+  <td>Row 2, Column 2</td>
+</tr>
+<!-- More rows... -->
+<tr>
+  <td>Row 9999, Column 1</td>
+  <td>Row 9999, Column 2</td>
+</tr>
+<tr>
+  <td>Row 10000, Column 1</td>
+  <td>Row 10000, Column 2</td>
+</tr>  <tr>
+<td>Row 1, Column 1</td>
+<td>Row 1, Column 2</td>
+</tr>
+<tr>
+<td>Row 2, Column 1</td>
+<td>Row 2, Column 2</td>
+</tr>
+<!-- More rows... -->
+<tr>
+<td>Row 9999, Column 1</td>
+<td>Row 9999, Column 2</td>
+</tr>
+<tr>
+<td>Row 10000, Column 1</td>
+<td>Row 10000, Column 2</td>
+</tr>
+<tr>
+<td>Row 1, Column 1</td>
+<td>Row 1, Column 2</td>
+</tr>
+<tr>
+<td>Row 2, Column 1</td>
+<td>Row 2, Column 2</td>
+</tr>
+<!-- More rows... -->
+<tr>
+<td>Row 9999, Column 1</td>
+<td>Row 9999, Column 2</td>
+</tr>
+<tr>
+<td>Row 10000, Column 1</td>
+<td>Row 10000, Column 2</td>
+</tr>  <tr>
+<td>Row 1, Column 1</td>
+<td>Row 1, Column 2</td>
+</tr>
+<tr>
+<td>Row 2, Column 1</td>
+<td>Row 2, Column 2</td>
+</tr>
+<!-- More rows... -->
+<tr>
+<td>Row 9999, Column 1</td>
+<td>Row 9999, Column 2</td>
+</tr>
+<tr>
+<td>Row 10000, Column 1</td>
+<td>Row 10000, Column 2</td>
+</tr>  <tr>
+<td>Row 1, Column 1</td>
+<td>Row 1, Column 2</td>
+</tr>
+<tr>
+<td>Row 2, Column 1</td>
+<td>Row 2, Column 2</td>
+</tr>
+<!-- More rows... -->
+<tr>
+<td>Row 9999, Column 1</td>
+<td>Row 9999, Column 2</td>
+</tr>
+<tr>
+<td>Row 10000, Column 1</td>
+<td>Row 10000, Column 2</td>
+</tr>  <tr>
+<td>Row 1, Column 1</td>
+<td>Row 1, Column 2</td>
+</tr>
+<tr>
+<td>Row 2, Column 1</td>
+<td>Row 2, Column 2</td>
+</tr>
+<!-- More rows... -->
+<tr>
+<td>Row 9999, Column 1</td>
+<td>Row 9999, Column 2</td>
+</tr>
+<tr>
+<td>Row 10000, Column 1</td>
+<td>Row 10000, Column 2</td>
+</tr>  <tr>
+<td>Row 1, Column 1</td>
+<td>Row 1, Column 2</td>
+</tr>
+<tr>
+<td>Row 2, Column 1</td>
+<td>Row 2, Column 2</td>
+</tr>
+<!-- More rows... -->
+<tr>
+<td>Row 9999, Column 1</td>
+<td>Row 9999, Column 2</td>
+</tr>
+<tr>
+<td>Row 10000, Column 1</td>
+<td>Row 10000, Column 2</td>
+</tr>  <tr>
+<td>Row 1, Column 1</td>
+<td>Row 1, Column 2</td>
+</tr>
+<tr>
+<td>Row 2, Column 1</td>
+<td>Row 2, Column 2</td>
+</tr>
+<!-- More rows... -->
+<tr>
+<td>Row 9999, Column 1</td>
+<td>Row 9999, Column 2</td>
+</tr>
+<tr>
+<td>Row 10000, Column 1</td>
+<td>Row 10000, Column 2</td>
+</tr>  <tr>
+    <td>Row 1, Column 1</td>
+    <td>Row 1, Column 2</td>
+  </tr>
+  <tr>
+    <td>Row 2, Column 1</td>
+    <td>Row 2, Column 2</td>
+  </tr>
+  <!-- More rows... -->
+  <tr>
+    <td>Row 9999, Column 1</td>
+    <td>Row 9999, Column 2</td>
+  </tr>
+  <tr>
+    <td>Row 10000, Column 1</td>
+    <td>Row 10000, Column 2</td>
+  </tr>  <tr>
+  <td>Row 1, Column 1</td>
+  <td>Row 1, Column 2</td>
+</tr>
+<tr>
+  <td>Row 2, Column 1</td>
+  <td>Row 2, Column 2</td>
+</tr>
+<!-- More rows... -->
+<tr>
+  <td>Row 9999, Column 1</td>
+  <td>Row 9999, Column 2</td>
+</tr>
+<tr>
+  <td>Row 10000, Column 1</td>
+  <td>Row 10000, Column 2</td>
+</tr>  <tr>
+    <td>Row 1, Column 1</td>
+    <td>Row 1, Column 2</td>
+  </tr>
+  <tr>
+    <td>Row 2, Column 1</td>
+    <td>Row 2, Column 2</td>
+  </tr>
+  <!-- More rows... -->
+  <tr>
+    <td>Row 9999, Column 1</td>
+    <td>Row 9999, Column 2</td>
+  </tr>
+  <tr>
+    <td>Row 10000, Column 1</td>
+    <td>Row 10000, Column 2</td>
+  </tr>  <tr>
+  <td>Row 1, Column 1</td>
+  <td>Row 1, Column 2</td>
+</tr>
+<tr>
+  <td>Row 2, Column 1</td>
+  <td>Row 2, Column 2</td>
+</tr>
+<!-- More rows... -->
+<tr>
+  <td>Row 9999, Column 1</td>
+  <td>Row 9999, Column 2</td>
+</tr>
+<tr>
+  <td>Row 10000, Column 1</td>
+  <td>Row 10000, Column 2</td>
+</tr>  <tr>
+<td>Row 1, Column 1</td>
+<td>Row 1, Column 2</td>
+</tr>
+<tr>
+<td>Row 2, Column 1</td>
+<td>Row 2, Column 2</td>
+</tr>
+<!-- More rows... -->
+<tr>
+<td>Row 9999, Column 1</td>
+<td>Row 9999, Column 2</td>
+</tr>
+<tr>
+<td>Row 10000, Column 1</td>
+<td>Row 10000, Column 2</td>
+</tr>  <tr>
+<td>Row 1, Column 1</td>
+<td>Row 1, Column 2</td>
+</tr>
+<tr>
+<td>Row 2, Column 1</td>
+<td>Row 2, Column 2</td>
+</tr>
+<!-- More rows... -->
+<tr>
+<td>Row 9999, Column 1</td>
+<td>Row 9999, Column 2</td>
+</tr>
+<tr>
+<td>Row 10000, Column 1</td>
+<td>Row 10000, Column 2</td>
+</tr>  <tr>
+<td>Row 1, Column 1</td>
+<td>Row 1, Column 2</td>
+</tr>
+<tr>
+<td>Row 2, Column 1</td>
+<td>Row 2, Column 2</td>
+</tr>
+<!-- More rows... -->
+<tr>
+<td>Row 9999, Column 1</td>
+<td>Row 9999, Column 2</td>
+</tr>
+<tr>
+<td>Row 10000, Column 1</td>
+<td>Row 10000, Column 2</td>
+</tr>  <tr>
+    <td>Row 1, Column 1</td>
+    <td>Row 1, Column 2</td>
+  </tr>
+  <tr>
+    <td>Row 2, Column 1</td>
+    <td>Row 2, Column 2</td>
+  </tr>
+  <!-- More rows... -->
+  <tr>
+    <td>Row 9999, Column 1</td>
+    <td>Row 9999, Column 2</td>
+  </tr>
+  <tr>
+    <td>Row 10000, Column 1</td>
+    <td>Row 10000, Column 2</td>
+  </tr>  <tr>
+    <td>Row 1, Column 1</td>
+    <td>Row 1, Column 2</td>
+  </tr>
+  <tr>
+    <td>Row 2, Column 1</td>
+    <td>Row 2, Column 2</td>
+  </tr>
+  <!-- More rows... -->
+  <tr>
+    <td>Row 9999, Column 1</td>
+    <td>Row 9999, Column 2</td>
+  </tr>
+  <tr>
+    <td>Row 10000, Column 1</td>
+    <td>Row 10000, Column 2</td>
+  </tr>  <tr>
+    <td>Row 1, Column 1</td>
+    <td>Row 1, Column 2</td>
+  </tr>
+  <tr>
+    <td>Row 2, Column 1</td>
+    <td>Row 2, Column 2</td>
+  </tr>
+  <!-- More rows... -->
+  <tr>
+    <td>Row 9999, Column 1</td>
+    <td>Row 9999, Column 2</td>
+  </tr>
+  <tr>
+    <td>Row 10000, Column 1</td>
+    <td>Row 10000, Column 2</td>
+  </tr>  <tr>
+    <td>Row 1, Column 1</td>
+    <td>Row 1, Column 2</td>
+  </tr>
+  <tr>
+    <td>Row 2, Column 1</td>
+    <td>Row 2, Column 2</td>
+  </tr>
+  <!-- More rows... -->
+  <tr>
+    <td>Row 9999, Column 1</td>
+    <td>Row 9999, Column 2</td>
+  </tr>
+  <tr>
+    <td>Row 10000, Column 1</td>
+    <td>Row 10000, Column 2</td>
+  </tr>  <tr>
+    <td>Row 1, Column 1</td>
+    <td>Row 1, Column 2</td>
+  </tr>
+  <tr>
+    <td>Row 2, Column 1</td>
+    <td>Row 2, Column 2</td>
+  </tr>
+  <!-- More rows... -->
+  <tr>
+    <td>Row 9999, Column 1</td>
+    <td>Row 9999, Column 2</td>
+  </tr>
+  <tr>
+    <td>Row 10000, Column 1</td>
+    <td>Row 10000, Column 2</td>
+  </tr>  <tr>
+  <td>Row 1, Column 1</td>
+  <td>Row 1, Column 2</td>
+</tr>
+<tr>
+  <td>Row 2, Column 1</td>
+  <td>Row 2, Column 2</td>
+</tr>
+<!-- More rows... -->
+<tr>
+  <td>Row 9999, Column 1</td>
+  <td>Row 9999, Column 2</td>
+</tr>
+<tr>
+  <td>Row 10000, Column 1</td>
+  <td>Row 10000, Column 2</td>
+</tr>  <tr>
+<td>Row 1, Column 1</td>
+<td>Row 1, Column 2</td>
+</tr>
+<tr>
+<td>Row 2, Column 1</td>
+<td>Row 2, Column 2</td>
+</tr>
+<!-- More rows... -->
+<tr>
+<td>Row 9999, Column 1</td>
+<td>Row 9999, Column 2</td>
+</tr>
+<tr>
+<td>Row 10000, Column 1</td>
+<td>Row 10000, Column 2</td>
+</tr>  <tr>
+    <td>Row 1, Column 1</td>
+    <td>Row 1, Column 2</td>
+  </tr>
+  <tr>
+    <td>Row 2, Column 1</td>
+    <td>Row 2, Column 2</td>
+  </tr>
+  <!-- More rows... -->
+  <tr>
+    <td>Row 9999, Column 1</td>
+    <td>Row 9999, Column 2</td>
+  </tr>
+  <tr>
+    <td>Row 10000, Column 1</td>
+    <td>Row 10000, Column 2</td>
+  </tr>  <tr>
+  <td>Row 1, Column 1</td>
+  <td>Row 1, Column 2</td>
+</tr>
+<tr>
+  <td>Row 2, Column 1</td>
+  <td>Row 2, Column 2</td>
+</tr>
+<!-- More rows... -->
+<tr>
+  <td>Row 9999, Column 1</td>
+  <td>Row 9999, Column 2</td>
+</tr>
+<tr>
+  <td>Row 10000, Column 1</td>
+  <td>Row 10000, Column 2</td>
+</tr>  <tr>
+<td>Row 1, Column 1</td>
+<td>Row 1, Column 2</td>
+</tr>
+<tr>
+<td>Row 2, Column 1</td>
+<td>Row 2, Column 2</td>
+</tr>
+<!-- More rows... -->
+<tr>
+<td>Row 9999, Column 1</td>
+<td>Row 9999, Column 2</td>
+</tr>
+<tr>
+<td>Row 10000, Column 1</td>
+<td>Row 10000, Column 2</td>
+</tr>  <tr>
+<td>Row 1, Column 1</td>
+<td>Row 1, Column 2</td>
+</tr>
+<tr>
+<td>Row 2, Column 1</td>
+<td>Row 2, Column 2</td>
+</tr>
+<!-- More rows... -->
+<tr>
+<td>Row 9999, Column 1</td>
+<td>Row 9999, Column 2</td>
+</tr>
+<tr>
+<td>Row 10000, Column 1</td>
+<td>Row 10000, Column 2</td>
+</tr>  <tr>
+    <td>Row 1, Column 1</td>
+    <td>Row 1, Column 2</td>
+  </tr>
+  <tr>
+    <td>Row 2, Column 1</td>
+    <td>Row 2, Column 2</td>
+  </tr>
+  <!-- More rows... -->
+  <tr>
+    <td>Row 9999, Column 1</td>
+    <td>Row 9999, Column 2</td>
+  </tr>
+  <tr>
+    <td>Row 10000, Column 1</td>
+    <td>Row 10000, Column 2</td>
+  </tr>  <tr>
+  <td>Row 1, Column 1</td>
+  <td>Row 1, Column 2</td>
+</tr>
+<tr>
+  <td>Row 2, Column 1</td>
+  <td>Row 2, Column 2</td>
+</tr>
+<!-- More rows... -->
+<tr>
+  <td>Row 9999, Column 1</td>
+  <td>Row 9999, Column 2</td>
+</tr>
+<tr>
+  <td>Row 10000, Column 1</td>
+  <td>Row 10000, Column 2</td>
+</tr>  <tr>
+<td>Row 1, Column 1</td>
+<td>Row 1, Column 2</td>
+</tr>
+<tr>
+<td>Row 2, Column 1</td>
+<td>Row 2, Column 2</td>
+</tr>
+<!-- More rows... -->
+<tr>
+<td>Row 9999, Column 1</td>
+<td>Row 9999, Column 2</td>
+</tr>
+<tr>
+<td>Row 10000, Column 1</td>
+<td>Row 10000, Column 2</td>
+</tr>  <tr>
+    <td>Row 1, Column 1</td>
+    <td>Row 1, Column 2</td>
+  </tr>
+  <tr>
+    <td>Row 2, Column 1</td>
+    <td>Row 2, Column 2</td>
+  </tr>
+  <!-- More rows... -->
+  <tr>
+    <td>Row 9999, Column 1</td>
+    <td>Row 9999, Column 2</td>
+  </tr>
+  <tr>
+    <td>Row 10000, Column 1</td>
+    <td>Row 10000, Column 2</td>
+  </tr>  <tr>
+  <td>Row 1, Column 1</td>
+  <td>Row 1, Column 2</td>
+</tr>
+<tr>
+  <td>Row 2, Column 1</td>
+  <td>Row 2, Column 2</td>
+</tr>
+<!-- More rows... -->
+<tr>
+  <td>Row 9999, Column 1</td>
+  <td>Row 9999, Column 2</td>
+</tr>
+<tr>
+  <td>Row 10000, Column 1</td>
+  <td>Row 10000, Column 2</td>
+</tr>  <tr>
+<td>Row 1, Column 1</td>
+<td>Row 1, Column 2</td>
+</tr>
+<tr>
+<td>Row 2, Column 1</td>
+<td>Row 2, Column 2</td>
+</tr>
+<!-- More rows... -->
+<tr>
+<td>Row 9999, Column 1</td>
+<td>Row 9999, Column 2</td>
+</tr>
+<tr>
+<td>Row 10000, Column 1</td>
+<td>Row 10000, Column 2</td>
+</tr>  <tr>
+<td>Row 1, Column 1</td>
+<td>Row 1, Column 2</td>
+</tr>
+<tr>
+<td>Row 2, Column 1</td>
+<td>Row 2, Column 2</td>
+</tr>
+<!-- More rows... -->
+<tr>
+<td>Row 9999, Column 1</td>
+<td>Row 9999, Column 2</td>
+</tr>
+<tr>
+<td>Row 10000, Column 1</td>
+<td>Row 10000, Column 2</td>
+</tr>  <tr>
+    <td>Row 1, Column 1</td>
+    <td>Row 1, Column 2</td>
+  </tr>
+  <tr>
+    <td>Row 2, Column 1</td>
+    <td>Row 2, Column 2</td>
+  </tr>
+  <!-- More rows... -->
+  <tr>
+    <td>Row 9999, Column 1</td>
+    <td>Row 9999, Column 2</td>
+  </tr>
+  <tr>
+    <td>Row 10000, Column 1</td>
+    <td>Row 10000, Column 2</td>
+  </tr>  <tr>
+  <td>Row 1, Column 1</td>
+  <td>Row 1, Column 2</td>
+</tr>
+<tr>
+  <td>Row 2, Column 1</td>
+  <td>Row 2, Column 2</td>
+</tr>
+<!-- More rows... -->
+<tr>
+  <td>Row 9999, Column 1</td>
+  <td>Row 9999, Column 2</td>
+</tr>
+<tr>
+  <td>Row 10000, Column 1</td>
+  <td>Row 10000, Column 2</td>
+</tr>  <tr>
+    <td>Row 1, Column 1</td>
+    <td>Row 1, Column 2</td>
+  </tr>
+  <tr>
+    <td>Row 2, Column 1</td>
+    <td>Row 2, Column 2</td>
+  </tr>
+  <!-- More rows... -->
+  <tr>
+    <td>Row 9999, Column 1</td>
+    <td>Row 9999, Column 2</td>
+  </tr>
+  <tr>
+    <td>Row 10000, Column 1</td>
+    <td>Row 10000, Column 2</td>
+  </tr>  <tr>
+    <td>Row 1, Column 1</td>
+    <td>Row 1, Column 2</td>
+  </tr>
+  <tr>
+    <td>Row 2, Column 1</td>
+    <td>Row 2, Column 2</td>
+  </tr>
+  <!-- More rows... -->
+  <tr>
+    <td>Row 9999, Column 1</td>
+    <td>Row 9999, Column 2</td>
+  </tr>
+  <tr>
+    <td>Row 10000, Column 1</td>
+    <td>Row 10000, Column 2</td>
+  </tr>  <tr>
+    <td>Row 1, Column 1</td>
+    <td>Row 1, Column 2</td>
+  </tr>
+  <tr>
+    <td>Row 2, Column 1</td>
+    <td>Row 2, Column 2</td>
+  </tr>
+  <!-- More rows... -->
+  <tr>
+    <td>Row 9999, Column 1</td>
+    <td>Row 9999, Column 2</td>
+  </tr>
+  <tr>
+    <td>Row 10000, Column 1</td>
+    <td>Row 10000, Column 2</td>
+  </tr>  <tr>
+    <td>Row 1, Column 1</td>
+    <td>Row 1, Column 2</td>
+  </tr>
+  <tr>
+    <td>Row 2, Column 1</td>
+    <td>Row 2, Column 2</td>
+  </tr>
+  <!-- More rows... -->
+  <tr>
+    <td>Row 9999, Column 1</td>
+    <td>Row 9999, Column 2</td>
+  </tr>
+  <tr>
+    <td>Row 10000, Column 1</td>
+    <td>Row 10000, Column 2</td>
+  </tr>  <tr>
+    <td>Row 1, Column 1</td>
+    <td>Row 1, Column 2</td>
+  </tr>
+  <tr>
+    <td>Row 2, Column 1</td>
+    <td>Row 2, Column 2</td>
+  </tr>
+  <!-- More rows... -->
+  <tr>
+    <td>Row 9999, Column 1</td>
+    <td>Row 9999, Column 2</td>
+  </tr>
+  <tr>
+    <td>Row 10000, Column 1</td>
+    <td>Row 10000, Column 2</td>
+  </tr>  <tr>
+  <td>Row 1, Column 1</td>
+  <td>Row 1, Column 2</td>
+</tr>
+<tr>
+  <td>Row 2, Column 1</td>
+  <td>Row 2, Column 2</td>
+</tr>
+<!-- More rows... -->
+<tr>
+  <td>Row 9999, Column 1</td>
+  <td>Row 9999, Column 2</td>
+</tr>
+<tr>
+  <td>Row 10000, Column 1</td>
+  <td>Row 10000, Column 2</td>
+</tr>
+</tbody>
+</table>
+
+<div style="page-break-after: always;"></div>
+
+<p> with page break</p>
+
+<div echarts [options]="chartOption" class="demo-chart" (chartInit)="onChartInit($event)"></div>
+
+<div style="page-break-after: always;"></div>
+
+<div echarts [options]="chartOption" class="demo-chart" (chartInit)="onChartInit($event)"></div>
+
+

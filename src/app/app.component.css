@@ -1,0 +1,55 @@
+p {
+  font-family: Lato;
+}
+
+
+
+.hide-for-print {
+  display: none;
+}
+
+ @media print {
+  .hide-for-print {
+    display: block !important; /* Override the 'display: none' for printing */
+  }
+}
+
+
+
+
+@page {
+  size: letter;
+  margin: 20mm 10mm;
+}
+
+@page :first {
+  /* Styles for the first page */
+}
+
+@page :left {
+  /* Styles for left-hand pages (even-numbered pages) */
+}
+
+@page :right {
+  /* Styles for right-hand pages (odd-numbered pages) */
+}
+
+#header {
+  position: running(header);
+}
+
+@page {
+  @top-center {
+    content: element(header);
+  }
+}
+
+#footer {
+  position: running(footer);
+}
+
+@page {
+  @bottom-center {
+    content: element(footer);
+  }
+}
